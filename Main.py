@@ -15,7 +15,7 @@ pygame.display.set_caption("nwoijfgowsmowjngh")
 # x, y  / postaci // podzielone przez dwa dla align center
 x = width_screen / 2
 y = height_screen / 2
-file_postac = "D:\pygame hehe\postac.png"
+file_postac = "D:\pygame hehe\postac.png"          #w razie czego sama postacstanieodprzodu128x128.png
 
 # Dodatowe obiekty do pomocy
 szerokosc = 10
@@ -40,7 +40,7 @@ while run:
 
 
     # wallpaper // grafiki robione przez Łukasza Haładewicza
-    file_tlo = "D:\pygame hehe\gra.png"
+    file_tlo = "D:\pygame hehe\gra.png"            #w razie czego zmienic na gra.png
     tlo = pygame.image.load(file_tlo)
     win.blit(tlo,(0,0))
 
@@ -55,8 +55,8 @@ while run:
     # warunki do zmiany pozycji obiektu // kierunek postaci
     if keys[pygame.K_LEFT]:
         x -= krok
-        file_postac = "D:\pygame hehe\postac.png"
-
+        file_postac = "D:\pygame hehe\postac.png"                 #tutaj trzeba zmienic postac jesli nie bedzie dzialac na     postacchodzenieodprzodu128x128.gif
+    
     if keys[pygame.K_RIGHT]:
         x += krok
         file_postac = "D:\pygame hehe\postac.png"                               # TYMCZASOWE DANE (POSTAĆ)
